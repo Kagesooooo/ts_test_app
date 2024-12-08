@@ -1,0 +1,32 @@
+name: CI/CD (Lint & Test)
+
+# これがいつ実行されるかのトリガーを指定
+on:
+  push:
+    branches:
+      - main  # mainブランチへのpush時に実行
+  pull_request:
+    branches:
+      - main  # PRが作成されたときにも実行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Linuxの最新環境で動く
+
+    steps:
+    - name: 📥 コードをチェックアウト
+      uses: actions/checkout@v3
+
+    - name: 📦 Node.jsをセットアップ
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18  # Node.js 18を使う
+
+    - name: 📥 依存関係をインストール
+      run: npm install
+
+    - name: ✨ Lintチェックを実行
+      run: npm run lint
+
+    - name: 🧪 テストを実行
+      run: npm test
