@@ -1,3 +1,9 @@
+- app
+    - https://ts-test-app.vercel.app
+- ダッシュボード
+    - https://vercel.com/kagesooooos-projects/ts-test-app
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
