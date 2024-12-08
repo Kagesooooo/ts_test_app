@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "test": "echo \"No test specified\" && exit 1"
+    "test": "echo \"No test specified\""
   },
   "dependencies": {
     "next": "15.0.4",
