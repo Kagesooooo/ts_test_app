@@ -1,7 +1,18 @@
+## App URL
 - app
     - https://ts-test-app.vercel.app
 - ダッシュボード
     - https://vercel.com/kagesooooos-projects/ts-test-app
+
+
+## 開発環境
+
+```bash
+# リンタの実行
+npm run lint
+# リンタの自動整形
+npm run lint:fix
+```
 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
