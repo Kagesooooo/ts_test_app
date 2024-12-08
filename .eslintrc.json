@@ -1,3 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": [
+    "next/core-web-vitals", 
+    "next/typescript", 
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    // ここにESLintの独自ルールを追加することも可能
+  }
 }
