@@ -11,7 +11,7 @@ export default function Home() {
         // 1️⃣ APIルートを呼び出す
         const response = await fetch('/api/todos');
         const data = await response.json();
-        
+
         // 2️⃣ データをstateに保存
         setTodos(data);
       } catch (error) {
@@ -21,9 +21,5 @@ export default function Home() {
 
     fetchData();
   }, []);
-  return (
-    <div>
-      {JSON.stringify(todos, null, 2)}
-    </div>
-  );
+  return <div>{JSON.stringify(todos, null, 2)}</div>;
 }

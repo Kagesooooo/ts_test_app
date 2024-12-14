@@ -10,12 +10,18 @@ export async function GET() {
 
     if (error) {
       console.error('Supabase error:', error);
-      return NextResponse.json({ error: 'データの取得に失敗しました' }, { status: 500 });
+      return NextResponse.json(
+        { error: 'データの取得に失敗しました' },
+        { status: 500 }
+      );
     }
 
     return NextResponse.json(data);
   } catch (error) {
     console.error('サーバーエラー:', error);
-    return NextResponse.json({ error: 'サーバーエラーが発生しました' }, { status: 500 });
+    return NextResponse.json(
+      { error: 'サーバーエラーが発生しました' },
+      { status: 500 }
+    );
   }
 }
