@@ -18,7 +18,7 @@ export const dataArray: ToDo[] = [
   {
     id: 1,
     title: '買い物',
-    contents: '牛乳とパンを買う',
+    contents: '牛乳と卵を買う',
     start_date: new Date('2024-03-10T10:00:00'),
     end_date: new Date('2024-03-10T11:00:00'),
     status: ToDoStatus.Todo,
